@@ -43,7 +43,7 @@ DATABASES = {
     'NAME': 'frepple',
     'USER': 'frepple',
     'PASSWORD': 'frepple',
-    'HOST': os.environ.get('DB_HOST', 'localhost'),     # Set to empty string for localhost.
+    'HOST': os.environ.get('FREPPLE_DB_PORT_5432_TCP_ADDR', 'localhost'),     # Set to empty string for localhost.
     'OPTIONS': {},  # Backend specific configuration parameters.
     'PORT': '',     # Set to empty string for default.
     'TEST': {
