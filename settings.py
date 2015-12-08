@@ -55,7 +55,7 @@ DATABASES = {
     'NAME': 'scenario1',
     'USER': 'frepple',
     'PASSWORD': 'frepple',
-    'HOST': '',     # Set to empty string for localhost.
+    'HOST': os.environ.get('FREPPLE_DB_PORT_5432_TCP_ADDR', 'localhost'),     # Set to empty string for localhost.
     'OPTIONS': {},  # Backend specific configuration parameters.
     'PORT': '',     # Set to empty string for default.
     'TEST': {
@@ -67,7 +67,7 @@ DATABASES = {
     'NAME': 'scenario2',
     'USER': 'frepple',
     'PASSWORD': 'frepple',
-    'HOST': '',     # Set to empty string for localhost.
+    'HOST': os.environ.get('FREPPLE_DB_PORT_5432_TCP_ADDR', 'localhost'),     # Set to empty string for localhost.
     'OPTIONS': {},  # Backend specific configuration parameters.
     'PORT': '',     # Set to empty string for default.
     'TEST': {
@@ -79,7 +79,7 @@ DATABASES = {
     'NAME': 'scenario3',
     'USER': 'frepple',
     'PASSWORD': 'frepple',
-    'HOST': '',     # Set to empty string for localhost.
+    'HOST': os.environ.get('FREPPLE_DB_PORT_5432_TCP_ADDR', 'localhost'),     # Set to empty string for localhost.
     'OPTIONS': {},  # Backend specific configuration parameters.
     'PORT': '',     # Set to empty string for default.
     'TEST': {
