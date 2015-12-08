@@ -1,0 +1,12 @@
+frepple:
+    image: asbjornenge/frepple-docker
+    links:
+        - "frepple-db:frepple-db"
+    ports:
+        - "8000:8000"
+    roles:
+        - global
+frepple-db:
+    image: postgres:9.1.19
+    volumes:
+        - /var/lib/postgresql/data:/data/postgres
