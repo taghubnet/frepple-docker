@@ -1,3 +1,10 @@
 #!/bin/sh
+
+echo "Migrate the database schema"
 frepplectl migrate --noinput
-frepplectl runserver 0.0.0.0:8000
+
+echo "Running the apache web server"
+rm -f /usr/local/apache2/logs/httpd.pid
+. /etc/apache2/envvars
+exec /usr/sbin/apache2 -DFOREGROUND
+

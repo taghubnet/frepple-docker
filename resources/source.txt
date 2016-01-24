@@ -1,0 +1,4 @@
+
+These files are obtained from:
+  - https://raw.githubusercontent.com/frePPLe/frePPLe/3.0/contrib/django/requirements.txt
+  - http://sourceforge.net/projects/frepple/files/frepple/3.0/Linux%20Debian/frepple_3.0-1_amd64.deb/download
